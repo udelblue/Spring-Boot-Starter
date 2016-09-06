@@ -1,2 +1,8 @@
 # Spring-Boot-Starter
-Inital Commit
+Starter project comes with
+-hibernate
+-spring data
+-spring security
+-envers (audit history)
+-swagger
+-swagger UI
