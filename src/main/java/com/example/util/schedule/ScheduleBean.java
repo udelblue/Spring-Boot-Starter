@@ -1,7 +1,5 @@
 package com.example.util.schedule;
 
-import java.time.LocalTime;
-
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +14,7 @@ public class ScheduleBean {
 	public void runEveryMin(){
 	
 		
-		System.out.println("Timer job executed " + LocalTime.now());
+		System.out.println("Timer job executed " );
 		
 	}
 	
