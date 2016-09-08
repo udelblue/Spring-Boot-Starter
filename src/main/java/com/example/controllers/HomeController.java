@@ -99,6 +99,7 @@ public class HomeController {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS"); 
 			Things thing = new Things();
 			thing.setName(sdf.format(new Date()));
+			thing.setTitle("test");
 			tr.save(thing);
 		
 		List<Things> list = new ArrayList<Things>();
