@@ -45,6 +45,7 @@ public class Things   {
 	
 	
 	
+	
 	public Long getId() {
 		return id;
 	}
