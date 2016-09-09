@@ -9,10 +9,14 @@ import java.util.List;
 
 
 
+
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -66,6 +70,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/thing")
 	@ResponseBody
+	@Cacheable("things")
 	public List<Things> things(){
 		List<Things> list = new ArrayList<Things>();
 		list = tr.findAllByOrderByIdAsc();

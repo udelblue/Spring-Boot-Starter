@@ -1,0 +1,244 @@
+08:12:00.409 [main] INFO  com.example.StarterApplication - Starting StarterApplication on OITS-HY2VBY1 with PID 14780 (C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter\target\classes started by csommers in C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter)
+08:12:00.409 [main] INFO  com.example.StarterApplication - No active profile set, falling back to default profiles: default
+08:12:01.097 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+08:12:01.145 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:12:01 EDT 2016]; root of context hierarchy
+08:12:02.913 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=databaseConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/DatabaseConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/SecurityConfig.class]]
+08:12:03.819 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa13029b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:03.866 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f32538b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:03.897 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$e798fd5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.038 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$8934703e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.070 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.070 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:12:04.585 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+08:12:04.631 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+08:12:04.631 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+08:12:04.904 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:12:04.904 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3759 ms
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08:12:05.262 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+08:12:05.934 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.h2.Driver
+08:12:06.293 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+08:12:06.294 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:12:06.547 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.9.Final}
+08:12:06.547 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:12:06.547 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+08:12:06.734 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+08:12:07.030 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:12:07.202 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:12:09.552 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:09.552 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:09.552 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:10.177 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:12:10.208 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:12:10.271 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:12:10.286 [main] INFO  com.example.StarterApplication - ---Application Started---
+08:12:10.380 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:12:10.395 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:12:11.129 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:11.129 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:11.129 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:12:11.208 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:12:11.223 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:12:11.254 [main] INFO  com.example.services.PeopleService - --Person Service Created
+08:12:11.738 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@69a360] of Hibernate SessionFactory for HibernateTransactionManager
+08:12:12.175 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fa7ee0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1db4d69, org.springframework.security.web.header.HeaderWriterFilter@1930e02, org.springframework.security.web.authentication.logout.LogoutFilter@1ce3b22, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ea164, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ab98b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fa478, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b4f1eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12290d, org.springframework.security.web.session.SessionManagementFilter@be3205, org.springframework.security.web.access.ExceptionTranslationFilter@1765a49, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d752e8]
+08:12:12.394 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:12:01 EDT 2016]; root of context hierarchy
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.example.controllers.HomeController.home()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/greeting]}" onto public java.lang.String com.example.controllers.HomeController.greeting(java.lang.String,org.springframework.ui.Model)
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.things()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing(com.example.models.Things)
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/people]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.people()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[POST]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople(com.example.models.Person)
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[GET]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thingcount]}" onto public java.lang.String com.example.controllers.HomeController.thingscount()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings]}" onto public org.springframework.hateoas.Resource<com.example.models.Things> com.example.controllers.OtherThingsController.things()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing(com.example.models.Things)
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/count]}" onto public java.lang.String com.example.controllers.OtherThingsController.thingscount()
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:12:12.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:12:12.581 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:12:12.581 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:12:12.644 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:12:14.219 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:12:14.252 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+08:12:14.267 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-9000]
+08:12:14.314 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:12:14.345 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+08:12:14.345 [main] INFO  com.example.StarterApplication - Started StarterApplication in 15.06 seconds (JVM running for 17.475)
+08:12:32.761 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08:12:32.762 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+08:12:32.806 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+08:12:32.903 [http-nio-9000-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+08:12:40.218 [http-nio-9000-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+08:14:45.232 [main] INFO  com.example.StarterApplication - Starting StarterApplication on OITS-HY2VBY1 with PID 600 (C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter\target\classes started by csommers in C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter)
+08:14:45.232 [main] INFO  com.example.StarterApplication - No active profile set, falling back to default profiles: default
+08:14:45.420 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+08:14:45.560 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:14:45 EDT 2016]; root of context hierarchy
+08:14:46.857 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=databaseConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/DatabaseConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/SecurityConfig.class]]
+08:14:47.619 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2195898c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.666 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$6aa7bfaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.697 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$5f1b844e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.837 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.837 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.853 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$b6f72f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.853 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:47.853 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:14:48.305 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+08:14:48.321 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+08:14:48.321 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+08:14:48.525 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:14:48.525 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2965 ms
+08:14:48.874 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:14:48.875 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:14:48.875 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:14:48.875 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:14:48.877 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08:14:48.877 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+08:14:49.475 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.h2.Driver
+08:14:49.788 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+08:14:49.804 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:14:49.913 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.9.Final}
+08:14:49.913 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:14:49.913 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+08:14:49.976 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+08:14:50.154 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:14:50.248 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:14:51.748 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:51.749 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:51.749 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:52.185 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:14:52.204 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:14:52.298 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:14:52.314 [main] INFO  com.example.StarterApplication - ---Application Started---
+08:14:52.392 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:14:52.407 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:14:53.145 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:53.145 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:53.145 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:14:53.208 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:14:53.224 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:14:53.271 [main] INFO  com.example.services.PeopleService - --Person Service Created
+08:14:53.782 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@eb4a2c] of Hibernate SessionFactory for HibernateTransactionManager
+08:14:54.159 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14cb0d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c3522, org.springframework.security.web.header.HeaderWriterFilter@1765a49, org.springframework.security.web.authentication.logout.LogoutFilter@3405a1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8b73c1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@c3a0ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d97fd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fa478, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c406d4, org.springframework.security.web.session.SessionManagementFilter@1d0b458, org.springframework.security.web.access.ExceptionTranslationFilter@21cbe7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ac0823]
+08:14:54.369 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:14:45 EDT 2016]; root of context hierarchy
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.example.controllers.HomeController.home()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thingcount]}" onto public java.lang.String com.example.controllers.HomeController.thingscount()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/greeting]}" onto public java.lang.String com.example.controllers.HomeController.greeting(java.lang.String,org.springframework.ui.Model)
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.things()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing(com.example.models.Things)
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/people]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.people()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[POST]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople(com.example.models.Person)
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[GET]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/count]}" onto public java.lang.String com.example.controllers.OtherThingsController.thingscount()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings]}" onto public org.springframework.hateoas.Resource<com.example.models.Things> com.example.controllers.OtherThingsController.things()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing(com.example.models.Things)
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing()
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:14:54.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:14:54.591 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:14:54.591 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:14:54.669 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:14:55.579 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:14:55.611 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+08:14:55.627 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-9000]
+08:14:55.643 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:14:55.658 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+08:14:55.674 [main] INFO  com.example.StarterApplication - Started StarterApplication in 11.004 seconds (JVM running for 12.105)
+08:14:57.998 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08:14:57.998 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+08:14:58.056 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 57 ms
+08:14:58.255 [http-nio-9000-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+08:39:47.913 [main] INFO  com.example.StarterApplication - Starting StarterApplication on OITS-HY2VBY1 with PID 11680 (C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter\target\classes started by csommers in C:\Users\csommers\Documents\workspace-sts-3.5.1.RELEASE\starter\Spring-Boot-Starter)
+08:39:47.918 [main] INFO  com.example.StarterApplication - No active profile set, falling back to default profiles: default
+08:39:48.098 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+08:39:48.248 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:39:48 EDT 2016]; root of context hierarchy
+08:39:49.622 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=databaseConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/DatabaseConfig.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/config/SecurityConfig.class]]
+08:39:50.412 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2195898c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.457 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$6aa7bfaa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.487 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$5f1b844e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.629 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [class org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.642 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers' of type [class org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.647 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [class org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$b6f72f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.657 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheManager' of type [class org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:50.657 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheAutoConfigurationValidator' of type [class org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:39:51.114 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9000 (http)
+08:39:51.132 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+08:39:51.133 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.4
+08:39:51.334 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:39:51.334 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3086 ms
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08:39:51.697 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+08:39:52.257 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.h2.Driver
+08:39:52.582 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+08:39:52.601 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:39:52.717 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.9.Final}
+08:39:52.722 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:39:52.722 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+08:39:52.788 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+08:39:52.990 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:39:53.071 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:39:54.647 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:54.652 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:54.652 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:55.096 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:39:55.116 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:39:55.187 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:39:55.205 [main] INFO  com.example.StarterApplication - ---Application Started---
+08:39:55.304 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+08:39:55.309 [main] INFO  o.h.e.b.internal.EnversServiceImpl - Envers integration enabled? : true
+08:39:56.037 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:56.038 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:56.038 [main] WARN  org.hibernate.orm.deprecation - HHH90000003: Use of DOM4J entity-mode is considered deprecated
+08:39:56.103 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+08:39:56.119 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+08:39:56.167 [main] INFO  com.example.services.PeopleService - --Person Service Created
+08:39:56.591 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@eb4a2c] of Hibernate SessionFactory for HibernateTransactionManager
+08:39:57.080 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@646d16, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d97fd1, org.springframework.security.web.header.HeaderWriterFilter@1d0b458, org.springframework.security.web.authentication.logout.LogoutFilter@1e16dd9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@140ccb9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47c08c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1db4d69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11e85df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c2d990, org.springframework.security.web.session.SessionManagementFilter@1930e02, org.springframework.security.web.access.ExceptionTranslationFilter@1bc516f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a3fc34]
+08:39:57.328 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1250572: startup date [Fri Sep 09 08:39:48 EDT 2016]; root of context hierarchy
+08:39:57.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.example.controllers.HomeController.home()
+08:39:57.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thingcount]}" onto public java.lang.String com.example.controllers.HomeController.thingscount()
+08:39:57.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/greeting]}" onto public java.lang.String com.example.controllers.HomeController.greeting(java.lang.String,org.springframework.ui.Model)
+08:39:57.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.things()
+08:39:57.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing()
+08:39:57.442 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/thing/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.HomeController.addthing(com.example.models.Things)
+08:39:57.442 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/people]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.people()
+08:39:57.442 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[POST]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople(com.example.models.Person)
+08:39:57.442 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/person/add],methods=[GET]}" onto public java.util.List<com.example.models.Person> com.example.controllers.HomeController.adpeople()
+08:39:57.444 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/count]}" onto public java.lang.String com.example.controllers.OtherThingsController.thingscount()
+08:39:57.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings]}" onto public org.springframework.hateoas.Resource<com.example.models.Things> com.example.controllers.OtherThingsController.things()
+08:39:57.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[POST]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing(com.example.models.Things)
+08:39:57.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/otherthings/add],methods=[GET]}" onto public java.util.List<com.example.models.Things> com.example.controllers.OtherThingsController.addthing()
+08:39:57.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08:39:57.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08:39:57.515 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:39:57.516 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:39:57.595 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08:39:58.487 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+08:39:58.518 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+08:39:58.533 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-9000]
+08:39:58.548 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+08:39:58.567 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000 (http)
+08:39:58.573 [main] INFO  com.example.StarterApplication - Started StarterApplication in 11.197 seconds (JVM running for 12.328)
+08:40:10.893 [http-nio-9000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08:40:10.893 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+08:40:10.943 [http-nio-9000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+08:40:11.050 [http-nio-9000-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
