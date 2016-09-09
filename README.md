@@ -5,8 +5,7 @@ Starter project comes with<br />
 -spring data<br />
 -spring security<br />
 -envers 'audit history' <br />
--swagger<br />
--swagger UI<br />
+-cache eh <br />
 
 <br />
 ### Notable URLS<br />
@@ -17,7 +16,8 @@ Swagger UI - http://localhost:9000/swagger-ui.html
 
 
 ### Auditing<br />
-Auditing is configured using annotation add the following annotation to any pojo you would like audited
+Auditing is configured using annotation add the following annotation to any pojo you would like audited.
+Auditing also captures time, IPaddress and username of user
 <br />
 ```
 @Audited
