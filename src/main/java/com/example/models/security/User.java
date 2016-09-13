@@ -22,7 +22,7 @@ public class User {
     private String username;
     private String password;
     
-    @Email
+    //@Email
     private String email;
     
     private int enabled;
@@ -53,7 +53,28 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) {
+    public User(String username, String password, String email, int enabled,
+			List<Role> roles) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.enabled = enabled;
+		this.roles = roles;
+	}
+    
+    
+    
+
+	public User(String username, String password, String email, int enabled) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.enabled = enabled;
+	}
+
+	public void setPassword(String password) {
         this.password = password;
     }
 

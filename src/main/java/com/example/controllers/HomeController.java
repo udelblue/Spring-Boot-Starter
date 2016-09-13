@@ -5,11 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-
-
-
 import java.util.Set;
 
 import javax.annotation.PostConstruct;
@@ -17,7 +13,6 @@ import javax.annotation.PreDestroy;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,15 +22,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
-import com.example.StarterApplication;
 import com.example.models.Address;
+import com.example.models.Book;
+import com.example.models.BookCategory;
 import com.example.models.Person;
 import com.example.models.Things;
 import com.example.models.security.Role;
 import com.example.models.security.User;
 import com.example.repository.AddressRepository;
+import com.example.repository.BookCategoryRepository;
 import com.example.repository.ThingRepository;
+import com.example.repository.security.RoleRepository;
+import com.example.repository.security.UserRepository;
 import com.example.services.PeopleService;
 import com.example.services.security.UserService;
 
@@ -51,6 +49,10 @@ public class HomeController {
 	}
 
 	@Autowired
+	BookCategoryRepository bookCategoryRepository;
+	
+	
+	@Autowired
 	UserService us;
 
 	@Autowired
@@ -63,6 +65,13 @@ public class HomeController {
 	@Autowired
 	AddressRepository ara;
 	
+	
+	
+
+	@Autowired
+	UserRepository ur;
+	@Autowired
+	RoleRepository rr;
 	
 	
 	@RequestMapping(value = "/")
@@ -205,37 +214,66 @@ public class HomeController {
 		
 		
 		
-		
-		for (int i = 1; i < 10; i++) {
-		Address a= new Address();
-		a.setFlatnumber(i);
-		a.setHousenumber(i);
-		a.setStreetname("testing");
-		ara.save(a);
-		
-		}
+	
 		
 		
 		
-		for (int i = 2; i < 5; i++) {
-			Address a= ara.getOne(i);
-			
-			 Set bookBs = new HashSet<Person>(){{
-		            add(new Person("Book B1"));
-		            add(new Person("Book B2"));
-		            add(new Person("Book B3"));
-		        }};
-			
-			
-			
-			a.setPersons(bookBs);
-			
-			ara.save(a);
-			
-			
-			}
+		 BookCategory categoryA = new BookCategory("Category A");
+	        Set bookAs = new HashSet<Book>(){{
+	            add(new Book("Book A1", categoryA));
+	            add(new Book("Book A2", categoryA));
+	            add(new Book("Book A3", categoryA));
+	        }};
+	        categoryA.setBooks(bookAs);
+
+	        BookCategory categoryB = new BookCategory("Category B");
+	        Set bookBs = new HashSet<Book>(){{
+	            add(new Book("Book B1", categoryB));
+	            add(new Book("Book B2", categoryB));
+	            add(new Book("Book B3", categoryB));
+	        }};
+	        categoryB.setBooks(bookBs);
+
+	        bookCategoryRepository.save(categoryA);
+
+	        bookCategoryRepository.save(categoryB);
 		
 		
+		
+	        
+	        
+	        Role r1 = new Role("super role","super");
+	        Role r2 = new Role("non super role","non super");
+	        Role r3 = new Role("admin","admin");
+	        
+	        rr.save(r1);
+	        rr.save(r2);
+	        rr.save(r3);
+	        
+	        User u1 = new User("t1","t1","test",1);
+	        User u2= new User("t2","t2","test",1);
+	        User u3 = new User("t3","t3","test",1);
+	        
+	        ur.save(u1);
+	        ur.save(u2);
+	        ur.save(u3);
+	        
+	        List<Role> rlist = rr.findAll();
+	        
+	        List<User> ulist = ur.findAll();
+	        
+	        
+	        for(User user: ulist)
+	        {
+	        	user.setRoles(rlist);
+	        	ur.save(user);
+	        }
+	        
+	        ur.delete(ulist.get(2));
+	        
+	        
+	        
+	        
 		return "seeded";
 	}
 	

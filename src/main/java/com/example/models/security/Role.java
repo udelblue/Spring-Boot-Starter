@@ -27,7 +27,17 @@ public class Role {
         return id;
     }
 
-    public void setId(Long id) {
+    public Role() {
+		super();
+	}
+
+	public Role(String description, String role) {
+		super();
+		this.description = description;
+		this.role = role;
+	}
+
+	public void setId(Long id) {
         this.id = id;
     }
 
@@ -46,6 +56,11 @@ public class Role {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Role [description=" + description + ", role=" + role + "]";
 	}
 
 

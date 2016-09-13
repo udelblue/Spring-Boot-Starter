@@ -56,7 +56,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //			.usersByUsernameQuery(
 //				"select username,password, enabled from user where username=?")
 //			.authoritiesByUsernameQuery(
-//				"select username, role from role where username=?");
+//				"select username , role  from user join user_role on user_role.user_user_id = user.user_id join role on role.role_id = user_role.roles_role_id where username=?");
 		
 		
 		
