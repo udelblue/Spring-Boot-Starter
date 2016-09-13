@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan
-@EnableJpaRepositories("com.example.repository")
+@EnableJpaRepositories(value="com.example.repository" )
 public class DatabaseConfig {
 
 	@Value("${db.driver}")

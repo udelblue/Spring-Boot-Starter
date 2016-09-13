@@ -25,8 +25,6 @@ public class Things   {
 	}
 	 
 	 
-	 
-	 
 	 @JsonCreator
 	public Things(Long id, @JsonProperty("name") String name) {
 		super();

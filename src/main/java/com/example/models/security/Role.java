@@ -1,18 +1,28 @@
 package com.example.models.security;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 
 @Entity
 @Table(name = "role")
 public class Role {
+	
+	@Id
+	@Column(name="ROLE_ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String username;
+	
+	@ManyToMany(targetEntity=Role.class)
+	private List<User> users;
+    
+	private String description;
+	
+	
+	
     private String role;
     
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
     }
@@ -21,13 +31,6 @@ public class Role {
         this.id = id;
     }
 
-	public String getUsername() {
-		return username;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
 
 	public String getRole() {
 		return role;
@@ -36,6 +39,15 @@ public class Role {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 
    
 }

@@ -5,13 +5,19 @@ import javax.persistence.*;
 
 import org.hibernate.validator.constraints.Email;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Entity
 @Table(name = "user" , indexes = {
-        @Index(columnList = "id", name = "user_id"),@Index(columnList = "username", name = "user_username")
+        @Index(columnList = "USER_ID", name = "user_id"),@Index(columnList = "username", name = "user_username")
     })
 public class User {
+	
+	@Id
+	@Column(name="USER_ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
     private String password;
@@ -20,10 +26,13 @@ public class User {
     private String email;
     
     private int enabled;
-    private Set<Role> roles;
+    
+    
+    @ManyToMany(targetEntity=Role.class , cascade=CascadeType.ALL )
+    @JoinTable(name="User_Role" )
+    private List<Role> roles = new ArrayList<Role>();
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   
     public Long getId() {
         return id;
     }
@@ -48,18 +57,7 @@ public class User {
         this.password = password;
     }
 
-  
-
-    @OneToMany
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "username"))
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
-
+   
 	public int getEnabled() {
 		return enabled;
 	}
@@ -75,4 +73,22 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", email=" + email
+				+ ", enabled=" + enabled + "]";
+	}
+
+
+
+
 }

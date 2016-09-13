@@ -1,9 +1,11 @@
 package com.example.models;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -36,8 +38,20 @@ public class Person {
 
 	    private String surname;
 
-	    @ManyToOne
+	    
+	    
+	    //@ManyToOne
+	    //@JoinColumn(name = "book_category_id")
+	    
+	    
+	    @ManyToOne(targetEntity = Address.class)
 	    private Address address;
+
+		public Person(String name) {
+			super();
+			this.name = name;
+		}
+
 
 		public Long getId() {
 			return id;
@@ -69,6 +83,7 @@ public class Person {
 		}
 
 
+		
 		public Address getAddress() {
 			return address;
 		}
