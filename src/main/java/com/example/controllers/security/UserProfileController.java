@@ -22,7 +22,7 @@ public class UserProfileController {
 	@RequestMapping(value = "/Profile", method = RequestMethod.GET)
     @ResponseBody
     public String myProfile(Principal principal) {
-		User currentUser = userRepository.findByUsername(principal.getName())
+		User currentUser = userRepository.findByUsername(principal.getName());
 		if (currentUser == null ) {
 			return "";
 		}
