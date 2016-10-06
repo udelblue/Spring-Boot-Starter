@@ -10,7 +10,7 @@ public class ScheduleBean {
 	
 	
 	
-	@Scheduled(fixedDelay= 3600 * 1000)
+	@Scheduled(fixedDelay= 10 * 1000)
 	public void runEveryMin(){
 	
 		
