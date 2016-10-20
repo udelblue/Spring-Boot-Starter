@@ -86,14 +86,6 @@ public class HomeController {
 		}
 	
 	
-		
-
-
-
-
-	
-	
-	
 	
 	@RequestMapping(value = "/thing")
 	@ResponseBody
