@@ -10,11 +10,11 @@ public class ScheduleBean {
 	
 	
 	
-	@Scheduled(fixedDelay= 10 * 1000)
+	//@Scheduled(fixedDelay= 10 * 1000)
 	public void runEveryMin(){
 	
 		
-		System.out.println("Timer job executed " );
+		//System.out.println("Timer job executed " );
 		
 	}
 	

@@ -45,7 +45,6 @@ public class HomeController {
 	
 	public HomeController() {
 		super();
-		System.out.println("------------------- Pre processing");
 	}
 
 	@Autowired
@@ -74,13 +73,20 @@ public class HomeController {
 	RoleRepository rr;
 	
 	
-	@RequestMapping(value = "/")
-	@ResponseBody
-	public String home(){
-		return "you are home";
-	}
+		@RequestMapping(value = "/")
+		public String index(){
+		return "home";
+		}
 	
 	
+
+		@RequestMapping(value = "/home")
+		public String home(){
+		return "home";
+		}
+	
+	
+		
 
 
 	    @RequestMapping("/greeting")
