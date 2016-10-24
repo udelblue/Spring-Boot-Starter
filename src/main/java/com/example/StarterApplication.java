@@ -30,7 +30,7 @@ public class StarterApplication {
 	public void postrun() 
 	{
 		
-		logger.info("---Application Started---");
+		//logger.info("---Application Started---");
 		
 		
 	}
